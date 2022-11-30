@@ -22,8 +22,32 @@ const routes = [
         component: () => import('./components/MainPage')
     },
     {
+        path: '/admin',
+        component: () => import('./components/admin/AdminPage')
+    },
+    {
         path: '/admin/employees',
         component: () => import('./components/admin/EmployeeList')
+    },
+    {
+        path: '/admin/grades',
+        component: () => import('./components/admin/GradeList')
+    },
+    {
+        path: '/admin/lessons',
+        component: () => import('./components/admin/LessonList')
+    },
+    {
+        path: '/admin/positions',
+        component: () => import('./components/admin/PositionList')
+    },
+    {
+        path: '/admin/students',
+        component: () => import('./components/admin/StudentList')
+    },
+    {
+        path: '/admin/timetable',
+        component: () => import('./components/admin/Timetable')
     },
 ]
 

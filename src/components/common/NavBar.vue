@@ -1,13 +1,13 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="/">Main page</b-navbar-brand>
+    <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
+      <b-navbar-brand href="/">На главную</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item @click="goToAdminPanel" href="#">Admin panel</b-nav-item>
+          <b-nav-item @click="goToAdminPanel" href="#">Панель администратора</b-nav-item>
           <b-nav-item href="#" disabled>Disabled</b-nav-item>
         </b-navbar-nav>
 
@@ -33,7 +33,7 @@ export default {
 
   methods: {
     goToAdminPanel() {
-      this.$router.push('/admin/employees');
+      this.$router.push('/admin');
     }
   }
 }

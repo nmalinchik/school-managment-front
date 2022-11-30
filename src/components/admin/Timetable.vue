@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h2>Main page</h2>
+    <h2>Timetable</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MainPage",
+  name: "TimetableList",
   components: {},
-
 }
 </script>
 

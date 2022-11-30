@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h2>Main page</h2>
+    <h2>Positions</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: "MainPage",
+  name: "PositionList",
   components: {},
-
 }
 </script>
 
