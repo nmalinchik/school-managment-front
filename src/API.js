@@ -9,6 +9,9 @@ export default {
         },
         positions: {
             getList: (page, size) => 'http://localhost:8030/v1/position?page=' + page +'&size=' + size,
+            create: 'http://localhost:8030/v1/position',
+            update: id => 'http://localhost:8030/v1/position/' + id,
+            delete: id => 'http://localhost:8030/v1/position/' + id,
         }
     }
 }

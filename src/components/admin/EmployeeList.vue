@@ -202,6 +202,8 @@ export default {
             this.totalElements = response.data.page.total_elements || 0;
             let employees = response.data.employees || [];
             callback(employees);
+          }).catch(error => {
+            this.$swal('Ошибка при получении списка', error.response.data.message, 'error');
           });
     },
 
@@ -258,8 +260,12 @@ export default {
           'Content-Type': 'application/json',
         },
       }).then(response => {
-        console.log(response);
+        if (response.status === 200) {
+          this.$swal('Успешно', 'Сотрудник с id = ' + response.data.id + ' успешно создан.', 'info');
+        }
         this.$refs.table.refresh();
+      }).catch(error => {
+        this.$swal('Ошибка при создании', error.response.data.message, 'error');
       });
     },
 
@@ -269,8 +275,12 @@ export default {
           'Content-Type': 'application/json',
         },
       }).then(response => {
-        console.log(response);
+        if (response.status === 200) {
+          this.$swal('Успешно', 'Сотрудник с id = ' + response.data.id + ' успешно обновлен.', 'info');
+        }
         this.$refs.table.refresh();
+      }).catch(error => {
+        this.$swal('Ошибка при обновлении', error.response.data.message, 'error');
       });
     },
 
@@ -292,8 +302,12 @@ export default {
           'Content-Type': 'application/json',
         },
       }).then(response => {
-        console.log(response);
+        if (response.status === 200) {
+          this.$swal('Успешно', 'должность с id = ' + id + ' успешно удалена.', 'info');
+        }
         this.$refs.table.refresh();
+      }).catch(error => {
+        this.$swal('Ошибка при удалении', error.response.data.message, 'error');
       });
     },
 

@@ -4,16 +4,19 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import VueSweetalert2 from 'vue-sweetalert2';
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'mdb-vue-ui-kit/css/mdb.min.css';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
 Vue.use(FormSelectPlugin)
 Vue.use(IconsPlugin)
 Vue.use(VueAxios, axios);
+Vue.use(VueSweetalert2);
 Vue.use(VueRouter);
 
 const routes = [
