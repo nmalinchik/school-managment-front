@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mr-2 ml-2">
     <h2>Timetable</h2>
   </div>
 </template>

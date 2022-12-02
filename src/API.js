@@ -18,6 +18,12 @@ export default {
             create: 'http://localhost:8030/v1/grade',
             update: id => 'http://localhost:8030/v1/grade/' + id,
             delete: id => 'http://localhost:8030/v1/grade/' + id,
+        },
+        lessons: {
+            getList: (page, size) => 'http://localhost:8030/v1/lesson?page=' + page +'&size=' + size,
+            create: 'http://localhost:8030/v1/lesson',
+            update: id => 'http://localhost:8030/v1/lesson/' + id,
+            delete: id => 'http://localhost:8030/v1/lesson/' + id,
         }
     }
 }

@@ -21,7 +21,7 @@
                     :description="descriptions[3]"
                     image-source="https://picsum.photos/600/300/?image=10"
                     panel-path="/admin/grades"></admin-card>
-        <admin-card card-name="Уроки"
+        <admin-card card-name="Предметы"
                     :description="descriptions[4]"
                     image-source="https://picsum.photos/600/300/?image=15"
                     panel-path="/admin/lessons"></admin-card>

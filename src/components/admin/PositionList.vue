@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mr-2 ml-2">
     <b-table
         striped bordered hover
         ref="table"
