@@ -12,6 +12,12 @@ export default {
             create: 'http://localhost:8030/v1/position',
             update: id => 'http://localhost:8030/v1/position/' + id,
             delete: id => 'http://localhost:8030/v1/position/' + id,
+        },
+        grades: {
+            getList: (page, size) => 'http://localhost:8030/v1/grade?page=' + page +'&size=' + size,
+            create: 'http://localhost:8030/v1/grade',
+            update: id => 'http://localhost:8030/v1/grade/' + id,
+            delete: id => 'http://localhost:8030/v1/grade/' + id,
         }
     }
 }
