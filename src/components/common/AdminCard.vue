@@ -8,12 +8,11 @@
         tag="article"
         style="max-width: 20rem;"
         class="mb-2"
+        @click="goToSelectCard"
     >
       <b-card-text>
         {{description}}
       </b-card-text>
-
-      <b-button href="#" @click="goToSelectCard" variant="primary">Перейти</b-button>
     </b-card>
   </div>
 </template>

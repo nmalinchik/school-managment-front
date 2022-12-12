@@ -24,6 +24,12 @@ export default {
             create: 'http://localhost:8030/v1/lesson',
             update: id => 'http://localhost:8030/v1/lesson/' + id,
             delete: id => 'http://localhost:8030/v1/lesson/' + id,
+        },
+        students: {
+            getList: (page, size) => 'http://localhost:8030/v1/student?page=' + page +'&size=' + size,
+            create: 'http://localhost:8030/v1/student',
+            update: id => 'http://localhost:8030/v1/student/' + id,
+            delete: id => 'http://localhost:8030/v1/student/' + id,
         }
     }
 }
